@@ -635,6 +635,9 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 44px;
+  height: 44px;
+  margin-top: 20px;
   color: inherit;
   fill: var(--menu-bck);
   align-items: center;
@@ -651,7 +654,7 @@ ul {
   background-color: var(--accent-color);
 }
 
-.links .icon + .icon {
+.links .social-icon + .social-icon {
 	margin-left: 10px;
 }
 
