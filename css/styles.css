@@ -605,8 +605,8 @@ ul {
 	display: flex;
 }
 
-.social-icon:not(:last-child) {
-	margin-right: 10px;
+.social-links .social-icon + .social-icon {
+	margin-left: 10px;
 }
 
 .footer-social-link {
