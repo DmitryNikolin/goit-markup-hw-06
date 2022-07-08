@@ -601,27 +601,6 @@ ul {
 	margin-right: auto;
 }
 
-/* .social-links a {
-	display: block;
-	width: 44px;
-	height: 44px;
-	padding: 12px;
-	margin-top: 20px;
-	border-radius: 50%;
-	fill: var(--menu-bck);
-	background-color: rgba(255, 255, 255, 0.1);
-	transition-property: fill background-color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-links a:hover,
-.social-links a:focus {
-	border-radius: 50%;
-	background-color: var(--accent-color);
-	fill: var(--menu-bck);
-} */
-
 .social-links {
 	display: flex;
 }
@@ -680,7 +659,7 @@ ul {
 }
 
 .footer-input:focus {
-	border: 2px solid rgba(255, 255, 255, 0.3);
+	border: 1px solid rgba(255, 255, 255, 0.3);
 	outline: none;
 }
 
@@ -901,21 +880,9 @@ button:focus {
 	margin-bottom: 10px;
 }
 
-.form-input {
-	width: 100%;
-	min-height: 40px;
-	border: 1px solid rgba(33, 33, 33, 0.2);
-	border-radius: 4px;
-	padding-left: 42px;
-	color: var(--primary-contact-color);
-	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-input:hover,
-.form-input:focus {
-	cursor: pointer;
-	border: 1px solid var(--accent-color);
-	color: var(--accent-color);
+.form-field:focus-within > .icon,
+.form-field:hover > .icon, 
+.form-field:focus > .icon {
 	fill: var(--accent-color);
 }
 
@@ -931,8 +898,22 @@ button:focus {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:hover > .icon,
-.form-field:focus > .icon {
+.form-input {
+	width: 100%;
+	min-height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	padding-left: 42px;
+	color: var(--primary-contact-color);
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus-within,
+.form-input:hover,
+.form-input:focus {
+	cursor: pointer;
+	border: 1px solid var(--accent-color);
+	color: var(--accent-color);
 	fill: var(--accent-color);
 }
 
@@ -949,8 +930,9 @@ button:focus {
 	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment-area:focus,
-.comment-area:hover {
+.comment-area:focus-within,
+.comment-area:hover,
+.comment-area:focus {
 	cursor: pointer;
 	border: 1px solid var(--accent-color);
 	color: var(--accent-color);
